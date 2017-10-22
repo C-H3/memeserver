@@ -25,7 +25,7 @@ class OurVeryOwnRouter extends \memeserver\Core\Router\Stock {
     public function index(RouteData $data) {
         $response = $data->getResponse();
         $response
-            ->setBody('<h1>It works!</h1>')
+            ->setBody('<h1>Server appears to be functioning normally.</h1>')
             ->setStatus(200)
             ->setContentType('text/html');
         return $response;
